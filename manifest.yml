@@ -1,0 +1,10 @@
+---
+applications:
+- name: current-user
+  memory: 512M
+  instances: 1
+  routes:
+    - route: current-user-qas.cfapps.us10.hana.ondemand.com
+  services:
+    - jco-xsuaa
+    - destination-service
