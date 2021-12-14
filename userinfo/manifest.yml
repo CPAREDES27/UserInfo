@@ -1,0 +1,9 @@
+---
+applications:
+- name: userinfo
+  memory: 512M
+  instances: 1
+  routes:
+    - route: userinfo-qas.cfapps.us10.hana.ondemand.com
+  services:
+    - jco-xsuaa
